@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placar de Basquete</title>
+    <link rel="stylesheet" href="Placar.css" />
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://s3-sa-east-1.amazonaws.com/recrutai-dev/fa6e1de0-005a-11ec-9c76-59037194a6de/logo/fa6e1de0-005a-11ec-9c76-59037194a6de_1630771003936_54w.png"
+        width="300px"
+        alt="Logo Senai"
+      />
+      <h1>Placar Basquete</h1>
+      <iframe
+        src="https://www.youtube.com/embed/jMQrxCeBrs4?start=32&autoplay=1&mute=1"
+        title="Basquete"
+        allow="autoplay"
+      >
+        >
+      </iframe>
+      <br />
+      <div class="scoreboard">
+        <h2>Time 1</h2>
+        <span class="score" id="score1">0</span><br />
+        <button onclick="addPoints(1, 1)">+1 Ponto</button>
+        <button onclick="subtractPoints(1)">-1 Ponto</button>
+      </div>
+      <div class="scoreboard">
+        <h2>Time 2</h2>
+        <span class="score" id="score2">0</span><br />
+        <button onclick="addPoints(2, 1)">+1 Ponto</button>
+        <button onclick="subtractPoints(2)">-1 Ponto</button>
+      </div>
+      <br />
+      <button class="reset" onclick="resetScores()">Resetar Placar</button>
+    </div>
+    <script src="Placa.js"></script>
+  </body>
+</html>
